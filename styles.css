@@ -1,0 +1,84 @@
+:root {
+  --bg: #0f1410;
+  --card: #1a221c;
+  --text: #e8f0ea;
+  --muted: #9aaf9e;
+  --accent: #3d9a6a;
+  --link: #7dcea0;
+  --border: #2a3a2e;
+  --max: 42rem;
+}
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC",
+    "PingFang TC", "Microsoft JhengHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+a { color: var(--link); }
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.25rem;
+  background: #121a14;
+}
+header .inner, main, footer .inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+header a.brand {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+header nav { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.85rem; }
+header nav a { text-decoration: none; color: var(--muted); font-size: 0.95rem; }
+header nav a:hover { color: var(--link); }
+main { padding: 1.75rem 1.25rem 3rem; }
+h1 { font-size: 1.65rem; margin: 0 0 0.35rem; font-weight: 700; }
+.sub { color: var(--muted); margin: 0 0 1.5rem; font-size: 0.95rem; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.15rem 1.25rem;
+  margin-bottom: 1rem;
+}
+h2 { font-size: 1.1rem; margin: 0 0 0.6rem; color: var(--accent); }
+ul { padding-left: 1.2rem; margin: 0.4rem 0 0.8rem; }
+.lang-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.lang-tabs a {
+  text-decoration: none;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.lang-tabs a.active, .lang-tabs a:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  background: #243028;
+}
+.lang-block { display: none; }
+.lang-block.active { display: block; }
+.cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.55rem 1rem;
+  background: var(--accent);
+  color: #04140c !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.25rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9rem; }
