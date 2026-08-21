@@ -1,6 +1,6 @@
 # vegradar.github.io
 
-Public store URLs for **VegRadar / 素食雷達**.
+Public store URLs for **VeggieSonar / 素食聲納**.
 
 | ASC field | URL |
 |-----------|-----|
